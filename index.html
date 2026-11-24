@@ -43,23 +43,6 @@ potrzebne jest konto na tej stronie. Wersja w repozytorium: <strong>0.5.4</stron
 <!-- F-Droid opens fdroid.link links itself (an https link of the repository would stay in the browser). -->
 <p><a class="btn" href="https://fdroid.link/#https://d33mobile.github.io/treningi-fdroid/repo?fingerprint=c2ab085e8fb77f572b39363294e4235aed34d3cac2aae4914488a00d218657a0">Dodaj repozytorium do F-Droid</a></p>
 
-<h2 id="blad-instalacji">Błąd &bdquo;SecurityException Calling identity is not authorized&rdquo;</h2>
-<p>Ten błąd F-Droid pokazuje na LineageOS 23.2 z poprawkami bezpieczeństwa z listopada 2026, gdy
-karta SD jest sformatowana jako pamięć wewnętrzna, a Android wybiera dla instalacji kartę SD (bo
-aplikacja już na niej jest w innym profilu, np. w przestrzeni prywatnej, albo karta ma więcej wolnego
-miejsca). To błąd systemu: dotyczy każdej aplikacji instalowanej przez F-Droid, a instalatora systemu
-nie dotyczy.</p>
-<ol>
-  <li>Jeśli Treningi są już zainstalowane w innym profilu: otwórz tam Ustawienia &rarr; Aplikacje
-    &rarr; Treningi &rarr; Pamięć i pamięć podręczna &rarr; &bdquo;Zmień&rdquo; i wybierz pamięć
-    wewnętrzną. Potem zainstaluj Treningi w F-Droid jeszcze raz.</li>
-  <li>W innym wypadku pobierz przeglądarką plik
-    <a href="repo/treningi-0.5.4.apk">treningi-0.5.4.apk</a>, otwórz go z powiadomienia
-    o pobraniu albo z aplikacji Pliki i dotknij &bdquo;Zainstaluj&rdquo; (jeśli Android zapyta,
-    zezwól na instalację z tego źródła). Potem przenieś aplikację do pamięci wewnętrznej jak w punkcie
-    1: wtedy F-Droid może ją aktualizować.</li>
-</ol>
-
 <h3>Adres repozytorium z odciskiem</h3>
 <p>Odcisk SHA-256 klucza, którym podpisany jest indeks repozytorium; F-Droid sprawdza go przy
 dodawaniu:</p>
